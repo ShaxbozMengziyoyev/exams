@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Imtihon</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <h1 class="text-center p-3 bg-success text-white">API-Exam</h1>
+    </div>
+  </header> <!--header-->
+
+  <main class="container-fluid">
+    <section class="row">
+      <div class="col-4">
+       <h2 class="text-center bg-info">Users</h2>
+       <p class="user__result">Count of users : <span id="result"></span></p>
+       <ul class="user__list list-unstyled" id="users"></ul>
+      </div>
+    
+      <div class="col-4">
+       <h2 class="text-center bg-info">Posts</h2>
+       <p class="post__result">Count of users : <span id="post2"></span></p>
+       <ul class="post__list" id="post"></ul>
+      </div>
+
+      <div class="col-4">
+        <h2 class="text-center bg-info">Comments</h2>
+        <p class="comment__result">Count of users : <span id="comment"></span></p>
+        <ul class="comment__list list-unstyled" id="comment"></ul>
+      </div> <!--col-4-->
+
+    </section><!--section-->
+  </main> <!--main-->
+
+  <template id="template">
+    <div class="user card p-3 mb-4" id="user">
+        <div class="user__id"></div>
+        <h3 class="user__name"></h3>
+        <a href="#" class="user__email"></a> 
+        <p class="user__country"></p>
+        <p class="user__company"></p>
+        <p class="user__website"></p>
+    </div> <!--end of users-->
+  </template> <!--end of template-->
+
+  <template id="post-templete">
+    <li class="post card p-3 mb-4" id="post">
+      <div class="post__id"></div>
+      <h2 class="post__userid"><h2>
+      <h4 class="post__title"></h4> 
+      <p class="post__body"></p>
+    </li> <!--post-li-->
+  </template> <!--post-template-->
+
+  <template id="template__commit">
+    <li class="commit card p-3 mb-4 mt-3" id="commit">
+      <h2 class="commit__id"></h2>
+      <h3 class="commit__name"></h3>
+      <a href="#" class="commit__email"></a> 
+      <div class="commit__body"></div>
+    </li> <!--end of commit-->
+  </template> <!--end of template__commit-->
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
